@@ -3,10 +3,25 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<title></title>
+<title>源ノ角ゴシック / 源ノ明朝</title>
 <link rel="stylesheet" href="sh-fonts.css" type="text/css">
-<style>
+</head>
+<body>
 
+<div id="box" class="col sh-sans"></div>
+
+<div class="btn-box">
+<div id="btn-sans" class="btn sh-sans medium select" onclick="sansSwitch();">Source Han Sans</div>
+<div id="btn-serif" class="btn sh-serif medium" onclick="serifSwitch();">Source Han Serif</div>
+<div id="subsetname"></div>
+</div>
+
+<script src="script.js"></script>
+
+<style>
+div {
+    box-sizing: border-box;
+}
 h2,p {
     line-height: 1.8;
 }
@@ -18,16 +33,12 @@ hr {
     border: none;
     background: #aaa;
 }
-div {
-    box-sizing: border-box;
-}
-.col {
+.col,.col1 {
     padding: 50px;
 }
 .col1 {
     width: 50%;
     float: left;
-    padding: 50px;
 }
 .btn-box {
      position: fixed;
@@ -35,8 +46,9 @@ div {
      left: 10px;
 }
 .btn {
-    width: 180px;
+    width: 230px;
     text-align: center;
+    font-size: 20px;
     line-height: 60px;
     border: solid 1px #aaa;
     float: left;
@@ -55,19 +67,11 @@ div {
 .clear {
      clear: both;
 }
+#subsetname {
+    font-size: 14px;
+    padding: 10px 0px;
+    clear: both;
+}
 </style>
-</head>
-<body>
-
-<div id="box" class="col sh-sans"></div>
-
-<div class="btn-box">
-<div id="btn-sans" class="btn sh-sans medium select" onclick="sansSwitch();">Source Han Sans</div>
-<div id="btn-serif" class="btn sh-serif medium" onclick="serifSwitch();">Source Han Serif</div>
-</div>
-
-<script src="script.js">
-</script>
-
 </body>
 </html>
