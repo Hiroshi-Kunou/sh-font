@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title></title>
+<link rel="stylesheet" href="sh-fonts.css" type="text/css">
+<style>
+
+h2,p {
+    line-height: 1.8;
+}
+p {
+    font-size: 18px;
+}
+hr {
+    height: 1px;
+    border: none;
+    background: #aaa;
+}
+div {
+    box-sizing: border-box;
+}
+.col {
+    padding: 50px;
+}
+.col1 {
+    width: 50%;
+    float: left;
+    padding: 50px;
+}
+.btn-box {
+     position: fixed;
+     top: 10px;
+     left: 10px;
+}
+.btn {
+    width: 180px;
+    text-align: center;
+    line-height: 60px;
+    border: solid 1px #aaa;
+    float: left;
+    background-color: #fff;
+}
+.btn:nth-child(1) {
+    border-radius: 8px 0px 0px 8px;
+    border-right: none;
+}
+.btn:nth-child(2) {
+    border-radius: 0px 8px 8px 0px;
+}
+.select {
+    background-color: #ddd;
+}
+.clear {
+     clear: both;
+}
+</style>
+</head>
+<body>
+
+<div id="box" class="col sh-sans"></div>
+
+<div class="btn-box">
+<div id="btn-sans" class="btn sh-sans medium select" onclick="sansSwitch();">Source Han Sans</div>
+<div id="btn-serif" class="btn sh-serif medium" onclick="serifSwitch();">Source Han Serif</div>
+</div>
+
+<script src="script.js">
+</script>
+
+</body>
+</html>
