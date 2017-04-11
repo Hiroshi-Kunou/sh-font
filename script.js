@@ -14,24 +14,26 @@ var btnSerif = document.getElementById("btn-serif");
 var sans = "btn sh-sans medium "
 var serif = "btn sh-serif medium "
 
+var tagSans = ['ExtraLight','Light','Normal','Regular','Medium','Bold','Heavy'];
+// var tagSerif = ['ExtraLight','Light','Regular','Medium','SemiBold','Bold','Heavy'];
+var tags = tagSans;
+
 function sansSwitch(){
-     font.className = "col sh-sans";
-     btnSans.className = sans+"select";
-     btnSerif.className = serif;
+    font.className = "col sh-sans";
+    btnSans.className = sans+"select";
+    btnSerif.className = serif;
 };
 
 function serifSwitch(){
-     font.className = "col sh-serif";
-     btnSans.className = sans;
-     btnSerif.className = serif+"select";
+    font.className = "col sh-serif";
+    btnSans.className = sans;
+    btnSerif.className = serif+"select";
 };
 
 window.onload = function(){
 
 var subset = document.getElementById('subsetname');
 subset.innerHTML = 'サブセット = '+subsetName;
-
-var tags = ['ExtraLight','light','normal','regular','medium','bold','heavy'];
 
      for(i=0;i<tags.length;i++){
 
