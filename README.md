@@ -6,9 +6,6 @@ http://hiroshikunou.com/shFont/
 - woff2,woff,ttf,eotの各種にコンバート済み
 
 
-
----
-
 #### 使い方
 
 説明するまでもなさそうですが、  
@@ -31,7 +28,6 @@ onlinefontconverter
 （otfをttfに変換するときに使った）  
 https://onlinefontconverter.com/
 
----
 
 #### 書体原本
 
